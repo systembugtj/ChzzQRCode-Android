@@ -1,17 +1,24 @@
+QRCode Layout
 
-============
+[![Build Status](https://travis-ci.org/systembugtj/QRCode.svg?branch=master)](https://travis-ci.org/systembugtj/QRCode)
+[![](https://jitpack.io/v/systembugtj/qrcode.svg)](https://jitpack.io/#systembugtj/qrcode)
 
 ## 效果图与示例 apk
 
-
->ZXing
-
 ```groovy
-dependencies {
-   
-    compile 'org.chzz.qrcode:qrcode.1.0.0'
+allprojects {
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+    }
 }
+dependencies {
+    compile 'org.chzz.qrcode:qrcode.1.0.0'
+    compile 'com.github.systembugtj:qrcode:1.0.0'
+}
+
 ```
+
 ## 布局文件
 >ZXing
 
